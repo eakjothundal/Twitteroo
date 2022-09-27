@@ -1,4 +1,4 @@
-# Project 3 - *Twitteroo
+# Project 3 - *Twitteroo*
 
 **Twitteroo** is a basic twitter app to read your tweets.
 
