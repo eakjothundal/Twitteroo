@@ -163,8 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jfo-eQ-vRI">
-                                <rect key="frame" x="0.0" y="55" width="375" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jfo-eQ-vRI">
+                                <rect key="frame" x="0.0" y="67" width="375" height="580"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -174,6 +174,7 @@
                         <viewLayoutGuide key="safeArea" id="hqJ-lP-Hnw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hqJ-lP-Hnw" firstAttribute="bottom" secondItem="Jfo-eQ-vRI" secondAttribute="bottom" id="by7-Lm-Zi5"/>
                             <constraint firstItem="hqJ-lP-Hnw" firstAttribute="trailing" secondItem="Jfo-eQ-vRI" secondAttribute="trailing" id="inb-40-wln"/>
                             <constraint firstItem="Jfo-eQ-vRI" firstAttribute="top" secondItem="hqJ-lP-Hnw" secondAttribute="top" constant="11" id="q1w-ZX-cDW"/>
                             <constraint firstItem="Jfo-eQ-vRI" firstAttribute="leading" secondItem="hqJ-lP-Hnw" secondAttribute="leading" id="vh7-RS-17Q"/>
@@ -193,6 +194,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tweetTextView" destination="Jfo-eQ-vRI" id="UbK-Ir-IWe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2C-aS-pGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

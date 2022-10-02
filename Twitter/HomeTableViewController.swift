@@ -20,6 +20,14 @@ class HomeTableViewController: UITableViewController {
     }
     
     
+// Use to implement auto refresh after implementing pull to refresh
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//
+//    }
+//
+    
     func loadTweet() {
         
         let myUrl = "https://api.twitter.com/1.1/statuses/home_timeline.json"
