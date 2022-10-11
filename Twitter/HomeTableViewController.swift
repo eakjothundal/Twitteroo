@@ -17,9 +17,12 @@ class HomeTableViewController: UITableViewController {
         super.viewDidLoad()
         
         loadTweet()
-        
     }
     
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        sender.endRefreshing()
+        loadTweet()
+    }
     
 // Use to implement auto refresh after implementing pull to refresh
 //    override func viewDidAppear(_ animated: Bool) {
@@ -84,6 +87,7 @@ class HomeTableViewController: UITableViewController {
         
         return cell
     }
+    
     
     
     
